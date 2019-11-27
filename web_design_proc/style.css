@@ -1,0 +1,16 @@
+h1 {
+    text-align: center;
+}
+
+#hamburger {
+    position: relative;
+    left:2%;
+}
+
+.sidebar-no-display {
+    display:none !important;
+}
+
+p {
+    text-align:justify;
+}
