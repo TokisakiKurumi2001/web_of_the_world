@@ -1,3 +1,5 @@
 # TODO list
 
-Job will be assigned here.
+LaTEX:
+Web:
+Powerpoint:
