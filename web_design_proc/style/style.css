@@ -1,6 +1,28 @@
+:root
+{
+    --navbar_background_color: hsl(0, 0%, 61%);
+    --link_hover:hsl(0, 10%, 70%);
+}
+
 h1 
 {
     text-align: center;
+}
+
+span
+{
+    display:block;
+}
+
+span:hover
+{
+    background-color:var(--link_hover);
+    margin:0.2rem;
+}
+
+.dropdown_menu
+{
+    display:none;
 }
 
 .navbar_headings > li, .dropdown_menu > li
@@ -16,7 +38,7 @@ h1
 
 .navigation_bar
 {
-    background-color:hsl(0, 0%, 61%);
+    background-color:var(--navbar_background_color);
     padding-top:1rem;
 }
 
