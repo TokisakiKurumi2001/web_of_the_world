@@ -11,33 +11,74 @@
 		<!-- intergrity is said to prevent the CDN from betraying coder, I never read docs about that yet -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         
-        <link rel = "stylesheet" href = "style.css">
+        <link rel = "stylesheet" href = "../style/style.css">
 	</head>
 	<body>
-        <h1>Topic name</h1>
+        <!-- put all content in wrapper to make use of flexbox-->
+        <div class = "wrapper">
+            <h1>Topic name</h1>
+
+            <!-- navbar -->
+            <div class = "row">
+                <div class = "navigation_bar col-sm-12 col-md-3">
+                    <ul class = "navbar_headings">
+                        <li>
+                            <a href = "#">Introduction</a>
+                            <!-- drop down menu-->
+                            <ul class = "dropdown_menu" id = "intro_drop">
+                                <li>
+                                    <a href = "#">Introduction to VA</a>
+                                </li>
+                                <li>
+                                    <a href = "#">Introduction to AI</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href = "#">Content</a>
+                            <ul class = "dropdown_menu" id = "content_drop">
+                                <li>
+                                    <a href = "#">Virtual Assistant</a>
+                                </li>
+                                <li>
+                                    <a href = "#">Natural Language Processing</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href = "#">About</a>
+                            <ul class = "dropdown_menu" id = "about_drop">
+                                <li>
+                                    <a href = "#">Any stuff</a>
+                                </li>
+                                <li>
+                                    <a href = "#">Creator</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
         
-        <button id = "hamburger">&#9776;</button>
-        
-
-        <div class = "row">
-            <nav class = "col-md-1 sidebar">
-                <ul>
-                    <li>Link 1</li>
-                    <li>Link 2</li>
-                    <li>Link 3</li>
-                </ul>
-            </nav>
-
-            <div class = "col-md-11 content">
-                <div class = "container">
-		    <p>This is Duong</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nulla leo, scelerisque in purus ac, efficitur ultrices nisl. Donec non tincidunt nisl. Morbi molestie a nulla eu maximus. Donec a mi congue nibh fermentum eleifend. Aenean et fringilla mauris, sed feugiat neque. Integer molestie commodo purus, et suscipit est imperdiet vel. Suspendisse vel mauris sed nunc finibus consectetur et porta quam. Phasellus sit amet arcu laoreet, maximus metus a, sollicitudin lacus. Etiam faucibus viverra sem sed lacinia. Phasellus ornare massa non mauris interdum fringilla. Curabitur a lacinia elit, eget euismod nulla. Sed at vestibulum ante. Curabitur facilisis diam vehicula augue sodales consequat. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
+                <!-- content -->
+                <div class = "col-sm-12 col-md-9">
+                    <div class = "container content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed purus nunc, fermentum eget quam eget, mattis dignissim lectus. Nunc hendrerit quam at egestas pulvinar. Vestibulum bibendum accumsan odio a aliquet. Nunc tempor neque at ante mollis feugiat. Sed justo velit, ullamcorper id sollicitudin vel, dapibus vitae orci. Maecenas suscipit est.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,6 +90,6 @@
 		<!-- bootstrap.min.js -->
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         
-        <script src = "sidebar_toggle.js"></script>
+        <script src = "../script/sidebar_toggle.js"></script>
 	</body>
 </html>
