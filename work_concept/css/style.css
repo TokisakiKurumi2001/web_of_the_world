@@ -1,11 +1,17 @@
 body
 {
-	background-color:rgba(0,0,0,0.3);
+	background-color:#343a40;
 }
 
 video
 {
 	width: 100vw;
+}
+
+.flow_of_work
+{
+	background-color: hsl(236, 31%, 20%);
+	color: hsl(255, 100%, 100%);
 }
 
 /* medium screen */
