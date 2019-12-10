@@ -8,15 +8,40 @@ video
 	width: 100vw;
 }
 
+/* medium screen */
+@media (min-width: 768px) {
+	.container {
+		max-width:95vw !important;
+	}
+}
+
+h1
+{
+	text-align:center;
+	color:red;
+}
+
 .flow_of_work
 {
 	background-color: hsl(236, 31%, 20%);
 	color: hsl(255, 100%, 100%);
 }
 
-/* medium screen */
-@media (min-width: 768px) {
-	.container {
-		max-width:95vw !important;
-	}
+
+.below_headings
+{
+	background-color:hsl(236, 57%, 16%);
+	margin:0.1rem;
+}
+
+#flow_word, #flow_img, .white_border
+{
+	padding-top:0.5rem;
+	padding-bottom:0.5rem;
+	border:0.1rem solid white;
+}
+
+.white_text
+{
+	color: white;
 }
