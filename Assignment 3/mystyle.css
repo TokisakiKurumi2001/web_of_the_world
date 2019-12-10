@@ -1,4 +1,6 @@
-
+body {
+  background-image: url(ggg.jpg);
+}
 button {
   display: inline-block;
   border-radius: 4px;
