@@ -1,6 +1,16 @@
+:root
+{
+	--main-background-color:#343a40;
+	--content-bg-col:hsl(236, 31%, 20%);
+	--subcontent-bg-col:hsl(236, 57%, 16%);
+	--table_comparison_odd:hsl(235,16%,27%);
+	--table_comparison_even:hsl(235,24%,29%);
+	--comp_headings:#ef5350;
+}
+
 body
 {
-	background-color:#343a40;
+	background-color:var(--main-background-color);
 }
 
 video
@@ -23,14 +33,14 @@ h1
 
 .flow_of_work
 {
-	background-color: hsl(236, 31%, 20%);
-	color: hsl(255, 100%, 100%);
+	background-color: var(--content-bg-col);
+	color: white;
 }
 
 
 .below_headings
 {
-	background-color:hsl(236, 57%, 16%);
+	background-color:var(--subcontent-bg-col);
 	margin:0.1rem;
 }
 
@@ -44,4 +54,27 @@ h1
 .white_text
 {
 	color: white;
+}
+
+.table_comp > div:nth-child(odd)
+{
+	background-color: var(--table_comparison_odd);
+}
+
+.table_comp > div:nth-child(even)
+{
+	background-color: var(--table_comparison_even);
+}
+/* sketch image to be full inside its parent container */
+.img_comp
+{
+	width:100%;
+	height:100%;
+}
+
+.comp_headings
+{
+	text-align:center;
+	color:var(--comp_headings);
+	font-size:20px;
 }
