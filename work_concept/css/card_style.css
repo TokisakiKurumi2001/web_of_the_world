@@ -1,0 +1,39 @@
+:root
+{
+	--card_head_bg_col: hsl(214, 25%, 25%);
+	--card_head_col: hsl(0, 0%, 87%);
+	--card_content_bg_col: hsl(213, 26%, 14%);
+}
+
+.my_card_heading
+{
+	background-color: var(--card_head_bg_col);
+	color: var(--card_head_col);
+	border-radius: 15px;
+}
+
+.semi_rounded_top
+{
+	border-bottom-left-radius: 0px !important;
+	border-bottom-right-radius: 0px !important;
+}
+
+.semi_rounded_btm
+{
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+.my_card_heading > h3
+{
+	margin:0.1rem;
+	text-align: center;
+}
+
+.my_card_content
+{
+	padding:0.5rem;
+	background-color: var(--card_content_bg_col);
+	display:none;
+	color: var(--card_head_col);
+}
