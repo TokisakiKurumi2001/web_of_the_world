@@ -17,6 +17,9 @@
     <!-- animate.css -->
     <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 
+    <!-- highlight.js atom one dark -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/atom-one-dark.min.css">
+
     <link rel = "stylesheet" href = "css/style.css">
 
     <link rel = "stylesheet" href = "css/card_style.css">
@@ -281,7 +284,20 @@
 							<span class = "h3">Tokenization</span>
 						</div>
 
-						<div class = "my_card_content">
+						<div class = "my_card_content" style = "display: block !important">
+							<pre><code class = "python" color = "white">
+# The process of chopping sentence(content) into
+# piecess called tokens. A token is an instance of a sequence
+# of characters in some particular document that are grouped
+# together as a useful semantic unit for processing
+
+import spacy
+
+nlp = spacy.load("en_core_web_sm")
+doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
+for token in doc:
+    print(token.text, token.pos_, token.dep_)
+							</code></pre>
 						</div>
 
 						<div class = "my_card_footer">
@@ -302,8 +318,15 @@
 
     <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/highlight.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/languages/python.min.js"></script>
+
     <script>
         new WOW().init();
+    </script>
+
+    <script>
+    	hljs.initHighlightingOnLoad();
     </script>
 
     <script src = "js/card_reveal.js"></script>
