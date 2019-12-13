@@ -29,18 +29,11 @@
 	margin-top:0.5rem;
 }
 
-.my_card_heading > h5
+.my_card_heading > h3
 {
-	margin:0.1rem;
+	margin-top:0.1rem;
 	text-align: left;
 	text-indent: 0.5rem;
-}
-
-.my_card_heading > h5 > span
-{
-	margin-top:0.5rem;
-	font-size:10px !important;
-	float:right;
 }
 
 .my_card_content
