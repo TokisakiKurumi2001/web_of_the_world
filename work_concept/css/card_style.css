@@ -5,6 +5,13 @@
 	--card_content_bg_col: hsl(213, 26%, 14%);
 }
 
+.inst
+{
+	font-variant: small-caps;
+	color:white;
+	text-align: center;
+}
+
 .my_card_heading
 {
 	background-color: var(--card_head_bg_col);
@@ -29,8 +36,9 @@
 	margin-top:0.5rem;
 }
 
-.my_card_heading > h3
+.my_card_heading > span.h3
 {
+	display:block;
 	margin-top:0.1rem;
 	text-align: left;
 	text-indent: 0.5rem;

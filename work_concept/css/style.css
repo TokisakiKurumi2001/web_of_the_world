@@ -6,6 +6,7 @@
 	--table_comparison_odd:hsl(235,16%,27%);
 	--table_comparison_even:hsl(235,24%,29%);
 	--comp_headings:#ef5350;
+	--bold_text_highlight: #39ff14;
 }
 
 body
@@ -64,6 +65,11 @@ h1
 .table_comp > div:nth-child(even)
 {
 	background-color: var(--table_comparison_even);
+}
+
+b
+{
+	color:var(--bold_text_highlight);
 }
 /* sketch image to be full inside its parent container */
 .img_comp
