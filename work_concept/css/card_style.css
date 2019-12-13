@@ -24,10 +24,23 @@
 	border-bottom-right-radius: 15px;
 }
 
-.my_card_heading > h3
+.my_card
+{
+	margin-top:0.5rem;
+}
+
+.my_card_heading > h5
 {
 	margin:0.1rem;
-	text-align: center;
+	text-align: left;
+	text-indent: 0.5rem;
+}
+
+.my_card_heading > h5 > span
+{
+	margin-top:0.5rem;
+	font-size:10px !important;
+	float:right;
 }
 
 .my_card_content
