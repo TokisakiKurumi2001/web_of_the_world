@@ -4,27 +4,18 @@ $(function(){
 	*	- Use loop and array to reduce hard-code
 	*	- Click on 1 of the el#id will slide down its content and slide in other contents
 	*/
-	$("#single_layer").click(function(){
-		$("#single_layer > .my_card_heading").toggleClass("semi_rounded_top");
-		$("#single_layer > .my_card_content").slideToggle("slow");
-		$("#single_layer > .my_card_content").toggleClass("semi_rounded_btm");
-	});
 
-	$("#multi_layer").click(function(){
-		$("#multi_layer > .my_card_heading").toggleClass("semi_rounded_top");
-		$("#multi_layer > .my_card_content").slideToggle("slow");
-		$("#multi_layer > .my_card_content").toggleClass("semi_rounded_btm");
-	});
+	function reveal_card_content(card_element)
+	{
+		$(card_element).click(function(){
+			var card_heading_el = card_element + " > .my_card_heading";
+			var card_content_el = card_element + " > .my_card_content";
+			$(card_heading_el).toggleClass("semi_rounded_top");
+			$(card_content_el).slideToggle("slow").toggleClass("semi_rounded_btm");
+		});
+	}
 
-	$("#cnn").click(function(){
-		$("#cnn > .my_card_heading").toggleClass("semi_rounded_top");
-		$("#cnn > .my_card_content").slideToggle("slow");
-		$("#cnn > .my_card_content").toggleClass("semi_rounded_btm");
-	});
+	var card = new Array("#single_layer", "#multi_layer", "#cnn", "#rnn", "#speech_recog");
 
-	$("#rnn").click(function(){
-		$("#rnn > .my_card_heading").toggleClass("semi_rounded_top");
-		$("#rnn > .my_card_content").slideToggle("slow");
-		$("#rnn > .my_card_content").toggleClass("semi_rounded_btm");
-	});
+	card.forEach(reveal_card_content);
 });

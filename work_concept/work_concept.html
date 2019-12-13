@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Concept of working behind Virtual Assitant</title>
 
+    <!-- Bootstrap material design -->
+    <!-- import Google Icon Font -->
+	<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+
     <!-- Bootstrap.css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -231,6 +236,64 @@
     </section>
 
     <!-- NLP -->
+    <section id = "nlp">
+    	<div class = "container">
+    		<h1>Natural Language Processing</h1>
+    		<!-- process image -->
+    		<div class = "row justify-content-center">
+    			<img class = "img-fluid" src = "images/nlp/process.PNG" alt = "The processing of NLP handle user's command" />
+    		</div>
+
+    		<div class = "row">
+    			<!-- Speech Recognition -->
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "speech_recog">
+						<div class = "my_card_heading">
+							<span class = "h3">Speech Recognition</span>
+						</div>
+
+						<div class = "my_card_content">
+							<p>As name suggested, this part will convert the audio file, which is the user’s command in the form of speech into text. There are some famous libraries, API to implement the speech recognition such as: Google Cloud Speechto-Text(Google), SpeechRecognition - Web APIS(Mozilla), DeepSpeech(Mozilla), Wav2Letter(Facebook)</p>
+							<p class = "inst">* Click on the micro to record(English only) *</p>
+							<div class = "row">
+								<div class = "col">
+									<button onclick = "start_record()" id = "rec" class = "btn btn-danger bmd-btn-fab">
+										<i class = "material-icons">mic</i>
+									</button>
+								</div>
+								<div class = "col">
+									<button onclick = "stop_record()" id = "stop_rec" class = "btn btn-info bmd-btn-fab">
+										<i class = "material-icons">mic_off</i>
+									</button>
+								</div>
+							</div>
+							<div class = "row justify-content-center">
+								<div id = "speech_rec"></div>
+							</div>
+						</div>
+					</div>
+    			</div>
+
+    			<!-- Tokenization -->
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "token">
+						<div class = "my_card_heading">
+							<span class = "h3">Tokenization</span>
+						</div>
+
+						<div class = "my_card_content">
+						</div>
+
+						<div class = "my_card_footer">
+						</div>
+					</div>
+    			</div>
+    		</div>
+
+    		<div class = "row">
+    		</div>
+    	</div>
+    </section>
 
     <!-- Script -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -244,5 +307,9 @@
     </script>
 
     <script src = "js/card_reveal.js"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
+    <script src = "js/p5.speech.js"></script>
+    <script src = "js/speech_recognition.js"></script>
 </body>
 </html>
