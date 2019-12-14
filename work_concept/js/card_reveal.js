@@ -35,9 +35,9 @@ $(function(){
 		});
 	}
 
-	var card = new Array("#single_layer", "#multi_layer", "#cnn", "#rnn", "#speech_recog");
-	var card_have_code = new Array("#tokenization", "#pos", "#dep");
-	var btn_run_code = new Array("#token_run", "#pos_run", "#dep_run");
+	var card = new Array("#single_layer", "#multi_layer", "#cnn", "#rnn", "#speech_recog", "#text_classify");
+	var card_have_code = new Array("#tokenization", "#pos", "#dep", "#ner");
+	var btn_run_code = new Array("#token_run", "#pos_run", "#dep_run", "#ner_run");
 
 	card.forEach(reveal_card_content);
 	card_have_code.forEach(reveal_card_code);

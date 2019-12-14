@@ -376,6 +376,7 @@
     		</div>
 
     		<div class = "row">
+    			<!-- Dependency parser -->
     			<div class = "col-sm-12 col-md-4">
     				<div class = "my_card" id = "dep">
 						<div class = "my_card_heading">
@@ -419,6 +420,75 @@
 								8 30 nummod<br/>
 								9 champion ROOT<br/>
 							</p>
+						</div>
+					</div>
+    			</div>
+
+    			<!-- Named Entity Recognition -->
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "ner">
+						<div class = "my_card_heading">
+							<span class = "h3">Named Entity Recognition(NER)</span>
+						</div>
+
+						<div class = "my_card_content">
+							<pre><code class = "python">
+								# The main task of named
+								# entity recognition (NER) is to classify named entities, such as
+								# Guido van Rossum, Microsoft, London, etc., into predefined
+								# categories like persons, organizations, locations, time, dates and so on
+
+								from flair.data import Sentence
+								from flair.models import SequenceTagger
+
+								string = 'Viet Nam football team - SEA GAMES 30 champion'
+								# make a sentence
+								sentence = Sentence(string)
+
+								# load the NER tagger
+								tagger = SequenceTagger.load('ner')
+
+								# run NER over sentence
+								tagger.predict(sentence)
+
+								print(sentence)
+								print('The following NER tags are found:')
+
+								# iterate over entities and print
+								for entity in sentence.get_spans('ner'):
+								    print(entity)
+							</code></pre>
+						</div>
+
+						<div class = "my_card_footer">
+							<button class = "btn btn-danger rounded" id = "ner_run">Run</button>
+							<a href = "https://colab.research.google.com/drive/1tOjKmzWmfVb3m4KsDf12LxQfgjug5vEK" target = "_blank" class = "btn btn-info rounded">Edit</a>
+							<p class = "code_result">
+								Sentence: "Viet Nam football team - SEA GAMES 30 champion" - 9 Tokens<br/>
+								The following NER tags are found:<br/>
+								ORG-span [1,2]: "Viet Nam"<br/>
+								MISC-span [6,7]: "SEA GAMES"<br/>
+							</p>
+						</div>
+					</div>
+    			</div>
+
+    			<!-- Text classification -->
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "text_classify">
+						<div class = "my_card_heading">
+							<span class = "h3">Text classification</span>
+						</div>
+
+						<div class = "my_card_content">
+							<div class = "row">
+								<div class = "col-sm-12">
+									<img class = "img-fluid" src = "images/nlp/text_classification.PNG" alt = "Text classifications">
+								</div>
+								<div class = "col-sm-12">
+									<p>Text classification or Text Categorization is the activity of labeling natural language texts with relevant categories from a predefined set.</p>
+								</div>
+							</div>
 						</div>
 					</div>
     			</div>
