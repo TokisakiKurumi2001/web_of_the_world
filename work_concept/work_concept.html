@@ -279,34 +279,149 @@
 
     			<!-- Tokenization -->
     			<div class = "col-sm-12 col-md-4">
-    				<div class = "my_card" id = "token">
+    				<div class = "my_card" id = "tokenization">
 						<div class = "my_card_heading">
 							<span class = "h3">Tokenization</span>
 						</div>
 
-						<div class = "my_card_content" style = "display: block !important">
-							<pre><code class = "python" color = "white">
-# The process of chopping sentence(content) into
-# piecess called tokens. A token is an instance of a sequence
-# of characters in some particular document that are grouped
-# together as a useful semantic unit for processing
+						<div class = "my_card_content">
+							<pre><code class = "python">
+								# The process of chopping sentence(content) into
+								# piecess called tokens. A token is an instance of a sequence
+								# of characters in some particular document that are grouped
+								# together as a useful semantic unit for processing
 
-import spacy
+								import spacy
 
-nlp = spacy.load("en_core_web_sm")
-doc = nlp("Apple is looking at buying U.K. startup for $1 billion")
-for token in doc:
-    print(token.text, token.pos_, token.dep_)
+								string = "Viet Nam football team - SEA GAMES 30 champion"
+
+								model = spacy.load("en_core_web_sm")
+								doc = model(string)
+
+								i = 0
+								print(string)
+								for token in doc:
+									i += 1
+									print(i, token.text)
 							</code></pre>
 						</div>
 
 						<div class = "my_card_footer">
+							<button class = "btn btn-danger rounded" id = "token_run">Run</button>
+							<a href = "https://colab.research.google.com/drive/18CtZL-x136-osPiwkrVXM-TtBRHaINR-" target = "_blank" class = "btn btn-info rounded">Edit</a>
+							<p class = "code_result">
+								Viet Nam football team - SEA GAMES 30 champion<br/>
+								1 Viet<br/>
+								2 Nam<br/>
+								3 football<br/>
+								4 team<br/>
+								5 -<br/>
+								6 SEA<br/>
+								7 GAMES<br/>
+								8 30<br/>
+								9 champion<br/>
+							</p>
+						</div>
+					</div>
+    			</div>
+
+    			<!-- Part-of-Speech Tagging -->
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "pos">
+						<div class = "my_card_heading">
+							<span class = "h3">Part-of-Speech Tagging</span>
+						</div>
+
+						<div class = "my_card_content">
+							<pre><code class = "python">
+								# In corpus linguistics, part-of-speech
+								# tagging, also called grammatical tagging, is the process
+								# of marking up a word in a text (corpus) as corresponding 
+								# to a particular
+								# part of speech, based on both its definition and its context
+
+								import spacy
+
+								string = "Viet Nam football team - SEA GAMES 30 champion"
+
+								model = spacy.load("en_core_web_sm")
+								doc = model(string)
+
+								i = 0
+								print(string)
+								for token in doc:
+									i += 1
+									print(i, token.text, token.pos_)
+							</code></pre>
+						</div>
+
+						<div class = "my_card_footer">
+							<button class = "btn btn-danger rounded" id = "pos_run">Run</button>
+							<a href = "https://colab.research.google.com/drive/1sT9Puq96silnf0thKKVBKJwF2SjvwVtF" target = "_blank" class = "btn btn-info rounded">Edit</a>
+							<p class = "code_result">
+								Viet Nam football team - SEA GAMES 30 champion<br/>
+								1 Viet PROPN<br/>
+								2 Nam PROPN<br/>
+								3 football NOUN<br/>
+								4 team NOUN<br/>
+								5 - PUNCT<br/>
+								6 SEA PROPN<br/>
+								7 GAMES PROPN<br/>
+								8 30 NUM<br/>
+								9 champion NOUN<br/>
+							</p>
 						</div>
 					</div>
     			</div>
     		</div>
 
     		<div class = "row">
+    			<div class = "col-sm-12 col-md-4">
+    				<div class = "my_card" id = "dep">
+						<div class = "my_card_heading">
+							<span class = "h3">Dependency Parser</span>
+						</div>
+
+						<div class = "my_card_content">
+							<pre><code class = "python">
+								# A dependency parser analyzes the grammatical structure of a 
+								# sentence, establishing relationships between "head" words 
+								# and words which modify those heads. The
+								# figure below shows a dependency parse of a short sentence.
+
+								import spacy
+
+								string = "Viet Nam football team - SEA GAMES 30 champion"
+
+								model = spacy.load("en_core_web_sm")
+								doc = model(string)
+
+								i = 0
+								print(string)
+								for token in doc:
+									i += 1
+									print(i, token.text, token.dep_)
+							</code></pre>
+						</div>
+
+						<div class = "my_card_footer">
+							<button class = "btn btn-danger rounded" id = "dep_run">Run</button>
+							<a href = "https://colab.research.google.com/drive/1DhhSclR8AlbB_uTEABeKqHt-Nx4zD8qP" target = "_blank" class = "btn btn-info rounded">Edit</a>
+							<p class = "code_result">
+								Viet Nam football team - SEA GAMES 30 champion<br/>
+								1 Viet compound<br/>
+								2 Nam compound<br/>
+								3 football compound<br/>
+								4 team ROOT<br/>
+								5 - punct<br/>
+								6 SEA nmod<br/>
+								7 GAMES nmod<br/>
+								8 30 nummod<br/>
+								9 champion ROOT<br/>
+							</p>
+						</div>
+					</div>
+    			</div>
     		</div>
     	</div>
     </section>
