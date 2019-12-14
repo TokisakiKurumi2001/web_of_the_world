@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Introduction</title>
+
+    <!-- Bootstrap.css -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- animate.css -->
+    <link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+
+    <link rel = "stylesheet" href = "css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class = "navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <!-- There should be an icon here, instead of hidden brand -->
+        <a class = "navbar-brand" href = "#">Hidden brand</a>
+        <button class = "navbar-toggler" type = "button" data-toggle = "collapse" data-target = "#navbarToggler" aria-controls = "navbarToggler" aria-expanded = "false" aria-label = "Toggle navigation">
+            <span class = "navbar-toggler-icon"></span>
+        </button>
+    
+        <div class = "collapse navbar-collapse" id = "navbarToggler">
+            <ul class = "navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class = "nav-item active">
+                    <a class = "nav-link" href = "#home">Home</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link" href = "#AI">Artificial Intelligent</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a class = "nav-link" href = "#Recent_feats">Recent feat of AI</a>
+                </li>
+
+                
+            </ul>
+
+            <!-- Search bar -->
+            <form class = "form-inline my-2 my-lg-0">
+                <input class = "form-control mr-sm-2" type = "search" placeholder = "Search" aria-label = "Search">
+                <button class = "btn btn-outline-danger my-2 my-sm-0" type = "submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!-- HOME -->
+    <section id = "home">
+        <!-- Background video -->
+        <header>
+            <video autoplay muted loop>
+                <source type = "video/mp4" src = "Videos/ViYoutube-What is artificial intelligence.mp4">
+            </video>
+        </header>
+    </section>
+    <section id="AI">
+        <!-- Flow of work -->
+        <div class="container flow_of_work">
+            <h1>What is Artificial Intelligence</h1>
+            <div class="row below_headings">
+                <div class="col-sm-12 col-md-6" id="flow_img">
+                    <img class="img-fluid" src="images/Artificial_Intelligence.jpg" alt="Virtual Assitant Flow of Work" style=" max-width: 100%;max-height: 100%;display: block;">
+                    
+                </div>
+                <div class="col-sm-12 col-md-6" id="flow_word">
+                    <p class="wow fadeInRight" style ="font-size:x-large;">AI is an area of computer science of making intelligent machines that emphasizes the creation of them that react like humans. Some of the activities computers with artificial intelligence are designed for include:</p>
+                    <p class="wow fadeInRight" data-wow-delay="0.5s">
+                        <ul class="wow fadeInRight" data-wow-delay="0.5s" style ="font-size:x-large;">
+                            <li> Speech recognition	</li>
+                            <li> Learning </li>
+                            <li> Planning </li>
+                            <li> Problem-Solving </li>
+                        </ul>
+                    </p>
+                    <p class="wow fadeInRight" data-wow-delay="1s" style ="font-size:x-large;">Computer science defines AI research as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. A more elaborate definition characterizes AI as “a system’s ability to correctly interpret external data, to learn from such data, and to use those learnings to achieve specific goals and tasks through flexible adaptation.”</p>
+</div>
+            </div>
+        </div>
+    </section>
+    <!-- Intro to NN -->
+    <section id="Recent_feats">
+        <div class="container flow_of_work">
+            <h1>Recent feats of Artificial Intelligence</h1>
+            <div class="row below_headings">
+                <div class="col-sm-12 col-md-6" id="flow_img">
+                    <img class="img-fluid" src="images/AlphaGo.jpg" alt="Virtual Assitant Flow of Work">
+                </div>
+                <div class="col-sm-12 col-md-6" id="flow_word">
+                    <h2 stye="text-align:center;">Beating the World Champion of GO</h2>
+                    <p style ="font-size:x-large;"> In 2016, Google DeepMind’s AI software AlphaGo was the first computer program to defeat a professional human Go player and is arguably the strongest Go player in history.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container flow_of_work">
+            <div class="row below_headings">
+                <div class="col-sm-12 col-md-6" id="flow_img">
+                    <img class="img-fluid" src="images/Ateri.jpg" alt="Virtual Assitant Flow of Work">
+                </div>
+                <div class="col-sm-12 col-md-6" id="flow_word">
+                    <h2 stye="text-align:center;">Dominating Atari games</h2>
+                    <p style ="font-size:x-large;"> Old Atari games used to be extremely fun for humans, but we never really managed to dominate them like the way AI has recently done. 
+                    DeepMind – a London-based AI company acquired by Google in 2014 – was recently presented with a few classic Atari games. At first, Google’s DeepMind was not great but lately it started to play better than any human ever did.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
