@@ -286,23 +286,23 @@
 
 						<div class = "my_card_content">
 							<pre><code class = "python">
-								# The process of chopping sentence(content) into
-								# piecess called tokens. A token is an instance of a sequence
-								# of characters in some particular document that are grouped
-								# together as a useful semantic unit for processing
+# The process of chopping sentence(content) into
+# piecess called tokens. A token is an instance of a sequence
+# of characters in some particular document that are grouped
+# together as a useful semantic unit for processing
 
-								import spacy
+import spacy
 
-								string = "Viet Nam football team - SEA GAMES 30 champion"
+string = "Viet Nam football team - SEA GAMES 30 champion"
 
-								model = spacy.load("en_core_web_sm")
-								doc = model(string)
+model = spacy.load("en_core_web_sm")
+doc = model(string)
 
-								i = 0
-								print(string)
-								for token in doc:
-									i += 1
-									print(i, token.text)
+i = 0
+print(string)
+for token in doc:
+	i += 1
+	print(i, token.text)
 							</code></pre>
 						</div>
 
@@ -334,24 +334,24 @@
 
 						<div class = "my_card_content">
 							<pre><code class = "python">
-								# In corpus linguistics, part-of-speech
-								# tagging, also called grammatical tagging, is the process
-								# of marking up a word in a text (corpus) as corresponding 
-								# to a particular
-								# part of speech, based on both its definition and its context
+# In corpus linguistics, part-of-speech
+# tagging, also called grammatical tagging, is the process
+# of marking up a word in a text (corpus) as corresponding 
+# to a particular
+# part of speech, based on both its definition and its context
 
-								import spacy
+import spacy
 
-								string = "Viet Nam football team - SEA GAMES 30 champion"
+string = "Viet Nam football team - SEA GAMES 30 champion"
 
-								model = spacy.load("en_core_web_sm")
-								doc = model(string)
+model = spacy.load("en_core_web_sm")
+doc = model(string)
 
-								i = 0
-								print(string)
-								for token in doc:
-									i += 1
-									print(i, token.text, token.pos_)
+i = 0
+print(string)
+for token in doc:
+	i += 1
+	print(i, token.text, token.pos_)
 							</code></pre>
 						</div>
 
@@ -385,23 +385,23 @@
 
 						<div class = "my_card_content">
 							<pre><code class = "python">
-								# A dependency parser analyzes the grammatical structure of a 
-								# sentence, establishing relationships between "head" words 
-								# and words which modify those heads. The
-								# figure below shows a dependency parse of a short sentence.
+# A dependency parser analyzes the grammatical structure of a 
+# sentence, establishing relationships between "head" words 
+# and words which modify those heads. The
+# figure below shows a dependency parse of a short sentence.
 
-								import spacy
+import spacy
 
-								string = "Viet Nam football team - SEA GAMES 30 champion"
+string = "Viet Nam football team - SEA GAMES 30 champion"
 
-								model = spacy.load("en_core_web_sm")
-								doc = model(string)
+model = spacy.load("en_core_web_sm")
+doc = model(string)
 
-								i = 0
-								print(string)
-								for token in doc:
-									i += 1
-									print(i, token.text, token.dep_)
+i = 0
+print(string)
+for token in doc:
+	i += 1
+	print(i, token.text, token.dep_)
 							</code></pre>
 						</div>
 
@@ -433,30 +433,30 @@
 
 						<div class = "my_card_content">
 							<pre><code class = "python">
-								# The main task of named
-								# entity recognition (NER) is to classify named entities, such as
-								# Guido van Rossum, Microsoft, London, etc., into predefined
-								# categories like persons, organizations, locations, time, dates and so on
+# The main task of named
+# entity recognition (NER) is to classify named entities, such as
+# Guido van Rossum, Microsoft, London, etc., into predefined
+# categories like persons, organizations, locations, time, dates and so on
 
-								from flair.data import Sentence
-								from flair.models import SequenceTagger
+from flair.data import Sentence
+from flair.models import SequenceTagger
 
-								string = 'Viet Nam football team - SEA GAMES 30 champion'
-								# make a sentence
-								sentence = Sentence(string)
+string = 'Viet Nam football team - SEA GAMES 30 champion'
+# make a sentence
+sentence = Sentence(string)
 
-								# load the NER tagger
-								tagger = SequenceTagger.load('ner')
+# load the NER tagger
+tagger = SequenceTagger.load('ner')
 
-								# run NER over sentence
-								tagger.predict(sentence)
+# run NER over sentence
+tagger.predict(sentence)
 
-								print(sentence)
-								print('The following NER tags are found:')
+print(sentence)
+print('The following NER tags are found:')
 
-								# iterate over entities and print
-								for entity in sentence.get_spans('ner'):
-								    print(entity)
+# iterate over entities and print
+for entity in sentence.get_spans('ner'):
+	print(entity)
 							</code></pre>
 						</div>
 
@@ -491,6 +491,16 @@
 							</div>
 						</div>
 					</div>
+    			</div>
+    		</div>
+    	</div>
+    </section>
+
+    <section id = "end" style = "background-color: white">
+    	<div class = "container">
+    		<div class = "row justify-content-center">
+    			<div class = "col-sm-12">
+    				<h4 style = "text-align: center; margin-top:1rem">This is the end of the part "How Virtual Assistant works"</h4>
     			</div>
     		</div>
     	</div>
