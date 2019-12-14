@@ -1,0 +1,48 @@
+.wrapper
+{
+	background-image: url("../images/stunning.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.knock_out_text
+{
+	background-color:white;
+	color: black;
+	font-weight: bold;
+	text-align: center;
+	mix-blend-mode: screen;
+}
+
+.star_rate
+{
+	background-color: white;
+}
+
+.star_rating > li
+{
+	display:inline-block;
+}
+
+.star_rating > li > i
+{
+	font-size:2.5rem;
+	color:#ccc;
+}
+
+.star_rating > li.hover > i
+{
+	color:#FFCC36;
+}
+
+.star_rating > li.selected > i
+{
+	color:#FF912C;
+}
+
+.hidden_rate
+{
+	display: none !important;
+}

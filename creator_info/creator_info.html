@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>The Gauze Mask Team</title>
+		<!-- import Google Icon Font -->
+		<link rel = "stylesheet" href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+
+		<!-- Fontawesome -->
+		<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<!-- import materialize css -->
+		<link type = "text/css" rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" media = "screen,projection">
+
+		<!-- Let the broswer know website is optimized for mobile -->
+		<meta name = "viewport" content = "width=device-width, initial-scale = 1.0"/>
+
+		<link rel = "stylesheet" href = "css/style.css">
+	</head>
+	<body class = "wrapper">
+		<div class = "wrapper">
+			<h1 class = "knock_out_text">The Gauze Mask Team</h1>
+		</div>
+		<div class = "container">
+			<div class = "row">
+				<div class = "col s12 m4">
+					<div class="card">
+		    			<div class="card-image waves-effect waves-block waves-light">
+							<img class="activator" src="images/bootstrap.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">
+								Le Minh Khoi - 1952076
+								<i class="material-icons right">more_vert</i>
+							</span>
+							<p>
+								<i class="fab fa-github"></i>
+								<a href = "https://github.com/TokisakiKurumi2001" target = "_blank">Github</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">Le Minh Khoi<i class="material-icons right">close</i></span>
+							<p>I am programming language fanboy. I fascinate with web development and Artificial Intelligene, espeacially Natural Language Processing(NLP). In my free time, beside programming, I read books and do exercise</p>
+							<blockquote>When everything seems to be going against you, remember that the airplane takes off against the wind, not with it</blockquote>
+							<p style="text-align:right">Henry Ford</p>
+						</div>
+					</div>
+				</div>
+				<div class = "col s12 m4">
+					<div class="card">
+		    			<div class="card-image waves-effect waves-block waves-light">
+		    				<!-- Picture of yourself, replace the image below -->
+							<img class="activator" src="images/bootstrap.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">
+								Nguyen Minh Tam - 1952968
+								<i class="material-icons right">more_vert</i>
+							</span>
+							<p>
+								<!-- Can be github account, facebook or twitter -->
+								<!-- Change the fa-github to fa-facebook, fa-twitter if not use github -->
+								<!-- Put link in a[href=""] down below -->
+								<i class="fab fa-github"></i>
+								<a href = "" target = "_blank">Github</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">
+								Nguyen Minh Tam
+								<i class="material-icons right">close</i>
+							</span>
+							<p>Some information you want to share here</p>
+						</div>
+					</div>
+				</div>
+				<div class = "col s12 m4">
+					<div class="card">
+		    			<div class="card-image waves-effect waves-block waves-light">
+		    				<!-- Picture of yourself, replace the image below -->
+							<img class="activator" src="images/bootstrap.png">
+						</div>
+						<div class="card-content">
+							<span class="card-title activator grey-text text-darken-4">
+								Nguyen Le Nhat Duong - 1952638
+								<i class="material-icons right">more_vert</i>
+							</span>
+							<p>
+								<!-- Can be github account, facebook or twitter -->
+								<!-- Change the fa-github to fa-facebook, fa-twitter if not use github -->
+								<!-- Put link in a[href=""] down below -->
+								<i class="fab fa-github"></i>
+								<a href = "" target = "_blank">Github</a>
+							</p>
+						</div>
+						<div class="card-reveal">
+							<span class="card-title grey-text text-darken-4">
+								Nguyen Le Nhat Duong
+								<i class="material-icons right">close</i>
+							</span>
+							<p>Some information you want to share here</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Start rating -->
+			<div class = "row">
+				<div class = "col s12">
+					<div class = "star_rate">
+						<h3 style = "text-align: center">How do you feel about our website?</h3>
+						<div style = "text-align: center">
+							<ul class = "star_rating">
+								<li class = "star" data-value = "1">
+									<i class = "fa fa-star fa-fw"></i>
+								</li>
+								<li class = "star" data-value = "2">
+									<i class = "fa fa-star"></i>
+								</li>
+								<li class = "star" data-value = "3">
+									<i class = "fa fa-star"></i>
+								</li>
+								<li class = "star" data-value = "4">
+									<i class = "fa fa-star"></i>
+								</li>
+								<li class = "star" data-value = "5">
+									<i class = "fa fa-star"></i>
+								</li>
+							</ul>
+						</div>
+						<form action = "https://virtual-assistant-how-it-works.000webhostapp.com/star_receive.php" method = "POST">
+							<input type = "text" name = "rate" class = "hidden_rate" id = "star_rate_res" />
+							<button class="btn waves-effect waves-light" type="submit" name="action">Submit
+								<i class="material-icons right">send</i>
+							</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--import jQuery -->
+		<script src = "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+		<script src = "js/rate_star.js"></script>
+
+		<!-- import materialize javascript -->
+		<script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+	</body>
+</html>

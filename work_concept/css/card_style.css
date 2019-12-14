@@ -51,3 +51,15 @@
 	display:none;
 	color: var(--card_head_col);
 }
+
+.my_card_footer
+{
+	background-color: var(--card_head_bg_col);
+	color: var(--card_head_col);
+	display:none;
+}
+
+.code_result
+{
+	display:none;
+}
