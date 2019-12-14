@@ -35,6 +35,16 @@ $(function(){
 		});
 	}
 
+	function speech_recognition()
+	{
+		$("#rec").click(function(event){
+			event.stopPropagation();
+		});
+		$("#stop_rec").click(function(event){
+			event.stopPropagation();
+		});
+	}
+
 	var card = new Array("#single_layer", "#multi_layer", "#cnn", "#rnn", "#speech_recog", "#text_classify");
 	var card_have_code = new Array("#tokenization", "#pos", "#dep", "#ner");
 	var btn_run_code = new Array("#token_run", "#pos_run", "#dep_run", "#ner_run");
@@ -42,4 +52,5 @@ $(function(){
 	card.forEach(reveal_card_content);
 	card_have_code.forEach(reveal_card_code);
 	btn_run_code.forEach(run_code);
+	speech_recognition();
 });
